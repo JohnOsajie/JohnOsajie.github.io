@@ -1,4 +1,4 @@
-John Osajie - portfolio website
+### John Osajie - [portfolio website](https://johnosajie.github.io/)
 
 Vanderbilt University, 27 -- cs + econ
 
