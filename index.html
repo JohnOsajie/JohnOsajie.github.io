@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>John Osajie</title>
-  
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Fira+Code&family=Inter&display=swap" rel="stylesheet">
 
@@ -80,13 +80,21 @@
       border-radius: 10px;
       padding: 1rem;
       background: #f9f9f9;
-      min-height: 320px;
       transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      min-height: 100%;
     }
 
     .card:hover {
       transform: scale(1.03);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .beats-card, .card-link .card {
+      min-height: 360px; /* Set equal height for project cards */
+    }
+
+    .skill-card {
+      min-height: 200px; /* Make skill cards a bit shorter */
     }
 
     .tag {
@@ -118,7 +126,7 @@
 
   <p class="subtitle">
     <strong>Sophomore</strong> @ Vanderbilt University<br>
-    majoring in <em>computer science</em>, <em>economics</em>
+    majoring in <em>computer science</em>, economics
   </p>
 
   <hr>
@@ -132,15 +140,15 @@
   <div class="section">
     <div class="section-title">skills</div>
     <div class="card-grid">
-      <div class="card">
+      <div class="card skill-card">
         <strong>Coding</strong><br>
         <span class="tag">Python</span><span class="tag">Java</span><span class="tag">C++</span><span class="tag">R</span><span class="tag">CSS</span><span class="tag">Node.js</span><span class="tag">JavaScript</span><span class="tag">OxyLabs</span>
       </div>
-      <div class="card">
+      <div class="card skill-card">
         <strong>Tools</strong><br>
         <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">IntelliJ</span><span class="tag">Clion</span><span class="tag">Colab</span>
       </div>
-      <div class="card">
+      <div class="card skill-card">
         <strong>MSOffice</strong><br>
         <span class="tag">Excel</span><span class="tag">PowerPoint</span><span class="tag">Word</span>
       </div>
@@ -152,6 +160,7 @@
   <div class="section">
     <div class="section-title">projects</div>
     <div class="card-grid">
+
       <!-- Earnings Call Sentiment Analyzer -->
       <a href="https://github.com/JohnOsajie/earnings-call-sentiment-analyzer" target="_blank" class="card-link">
         <div class="card">
@@ -168,10 +177,10 @@
           </div>
         </div>
       </a>
-      
+
       <!-- Beats by Dre Externship Portfolio -->
-      <a href="https://1drv.ms/f/c/f264d3dcfeb27b14/EvZ3yuqNr69LjBkWnf9rjasBpfMaJgS0xZbNtwlfhaLeww?e=4ohNQR" target="_blank" class="card-link">
-        <div class="card">
+      <a href="" target="_blank" class="card-link">
+        <div class="card beats-card">
           <i class="uil uil-headphones" style="font-size: 2rem; color: #ff0000; margin-bottom: 1rem;"></i>
           <strong>Beats by Dre Externship Portfolio</strong>
           <p>Data analytics with a concentration on gaining business insights in the wireless speaker market.</p>
@@ -188,7 +197,7 @@
       </a>
     </div>
   </div>
-  
+
   <footer>
   </footer>
 </body>
